@@ -1,0 +1,40 @@
+/* Apply base styles to all elements to remove default spacing and set consistent box sizing and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Style the body to fill the entire viewport and center the clock both vertically and horizontally */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #03045E, #0077B6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the clock container as a centered circle with a nice background color and white text */
+.clock {
+    width: 800px;
+    height: 400px;
+    border-radius: 1.5rem;
+    background-color: #00B4D8;
+    color: #CAF0F8;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Style the paragraph inside the clock to display the time nicely */
+.clock p {
+    font-size: 100px;
+    font-weight: bold;
+    gap: 4px;
+    margin-bottom: 10px;
+    display: flex;
+}
